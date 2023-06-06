@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:recruitech_flutter/recruitment/presentation/home/home.dart';
 import 'package:recruitech_flutter/security/presentation/login/login.dart';
 
 void main() {
@@ -8,6 +9,7 @@ void main() {
       statusBarColor: Colors.white,
       statusBarBrightness: Brightness.dark,
       statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.white,
     ),
   );
 
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: Login(),
+      home: Home(),
     );
   }
 }

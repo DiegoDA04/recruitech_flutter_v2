@@ -19,11 +19,14 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Container(
-          height: double.infinity,
-          color: Colors.white,
-          padding: const EdgeInsets.all(24.0),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+      ),
+      body: Container(
+        height: double.infinity,
+        color: Colors.white,
+        padding: const EdgeInsets.all(24.0),
+        child: SafeArea(
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
             child: Column(
