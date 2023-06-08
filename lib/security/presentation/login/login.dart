@@ -19,17 +19,16 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.white,
       ),
-      resizeToAvoidBottomInset: false,
       body: Container(
         height: double.infinity,
         color: Colors.white,
         padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          mainAxisSize: MainAxisSize.max,
           children: [
             Column(
               children: [

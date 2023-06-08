@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:recruitech_flutter/profile/presentation/developer_profile/developer_profile.dart';
 import 'package:recruitech_flutter/recruitment/presentation/home/home.dart';
 import 'package:recruitech_flutter/security/presentation/login/login.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
-      statusBarBrightness: Brightness.dark,
-      statusBarIconBrightness: Brightness.dark,
-      systemNavigationBarColor: Colors.white,
-    ),
+    const SystemUiOverlayStyle(),
   );
 
   runApp(const MyApp());
@@ -30,7 +26,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: Home(),
+      home: Login(),
     );
   }
 }
